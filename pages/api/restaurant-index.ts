@@ -24,7 +24,7 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
 ) {
-    axios.get('http://tashidelekcuisine.test/api/restaurants/v1/home')
+    axios.get(`${process.env.SERVER_URL}/restaurants/v1/home`)
         .then((response) => {
             res.status(200).json(response.data)
         })

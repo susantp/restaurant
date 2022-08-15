@@ -39,8 +39,8 @@ const Home: NextPage<any> = ({content, error}) => {
 
 export async function getServerSideProps() {
 
-    const res = await fetch('http://localhost:3000/api/restaurant-index')
-    const data = await res.json()
+    const res = await axios.get(`${process.env.APP_URL}/api/restaurant-index`)
+    const {data} = await res
     console.log(data)
     const content = data.data
     return {
