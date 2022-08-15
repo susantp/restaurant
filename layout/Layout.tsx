@@ -8,7 +8,7 @@ const Layout: FC<any> = ({children}): JSX.Element => {
     return (
         <div className={`bg-slate-100 `}>
             <Navbar></Navbar>
-            {children}
+            <Content>{children}</Content>
             <GoTop></GoTop>
             <Footer></Footer>
         </div>

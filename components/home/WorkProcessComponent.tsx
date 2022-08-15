@@ -31,7 +31,7 @@ const WorkProcessComponent: FC<WorkProcessComponentProps> = ({heading, processes
         </div>
 
     return (
-        <div className={`bg-blue-100 bg-cover`} style={{backgroundImage: `url(/slider.avif)`}}>
+        <div className={`bg-blue-100`}>
             <div className={`sectionDiv`}>
                 <div className={`py-4`}><h2 className={`headerText`}>{heading}</h2></div>
                 <div className={`grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5  gap-y-16 mt-5 `}>

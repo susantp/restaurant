@@ -3,16 +3,18 @@ import Layout from "../layout/Layout";
 import Head from "next/head";
 import WorkProcessComponent from "../components/home/WorkProcessComponent";
 import useContentSchema from "../hooks/useContentSchema";
+import SliderComponent from "../components/home/SliderComponent";
+import {FC} from "react";
 
-const Home = (): JSX.Element => {
-    const {workProcessComponent, whyChooseUs, whatWeDo} = useContentSchema();
-
+const Home: FC<any> = ({content}): JSX.Element => {
+    const {workProcessComponent} = useContentSchema()
     return (
         <Layout>
-            <WorkProcessComponent heading={workProcessComponent.heading} processes={workProcessComponent.processes}/>
+            <SliderComponent sliders={content.sliders}></SliderComponent>
         </Layout>
     )
 }
+
 export async function getServerSideProps() {
 
     const res = await axios.get(`${process.env.APP_URL}/api/restaurants`)
