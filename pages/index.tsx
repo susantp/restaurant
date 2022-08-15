@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css'
 import axios from "axios";
 
 const Home: NextPage<any> = ({content, error}) => {
-    console.log(content)
     return (
         <div className={styles.container}>
             <Head>
@@ -39,9 +38,8 @@ const Home: NextPage<any> = ({content, error}) => {
 
 export async function getServerSideProps() {
 
-    const res = await axios.get(`${process.env.APP_URL}/api/restaurant-index`)
+    const res = await axios.get(`${process.env.APP_URL}/api/restaurants`)
     const {data} = await res
-    console.log(data)
     const content = data.data
     return {
         props: {
