@@ -1,6 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
 import {FaRegDotCircle} from "react-icons/fa";
-import 'animate.css';
 
 const SliderComponent: FC<any> = ({sliders}): JSX.Element => {
     const [slideIndex, setSlideIndex] = useState(0)
