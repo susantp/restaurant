@@ -27,10 +27,10 @@ const IntroComponent: FC<IntroComponentProps> = ({title, description, pages }): 
 
     return (
         <div className={`bg-blue-100`}>
-            <div className={`sectionDiv `}>
+            <div className={`sectionDiv item`}>
                 <h2 className={`headerText text-4xl`}>{title}</h2>
                 <p className={`text-center`} dangerouslySetInnerHTML={{ __html: description }}></p>
-                <div className={`grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5  gap-y-16 mt-5 `}>
+                <div className={`grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3  gap-y-16 mt-5 `}>
                     {pages.map((page) =>
                         <SingleIntroComponent
                             key={page.slug}

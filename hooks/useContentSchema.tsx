@@ -17,32 +17,32 @@ export default function UseContentSchema() {
         {
             title: 'Menu',
             slug: 'menu',
-            divStyle: 'p-2 text-xl cursor-pointer'
+            divStyle: 'p-2 sm:text-sm md:text-md xl:text-xl text-md cursor-pointer'
         },
         {
             title: 'Order Now',
             slug: 'order-now',
-            divStyle: 'p-2 bg-orange-500 text-xl text-white rounded-lg cursor-pointer'
+            divStyle: 'bg-orange-500 p-2 sm:text-sm md:text-md xl:text-xl text-mdge-500 text-xl text-white rounded-lg cursor-pointer'
         },
         {
             title: 'Catering',
             slug: 'catering',
-            divStyle: 'p-2 text-xl cursor-pointer'
+            divStyle: 'p-2 sm:text-sm md:text-md xl:text-xl text-md cursor-pointer'
         },
         {
             title: 'Events',
             slug: 'events',
-            divStyle: 'p-2 text-xl cursor-pointer'
+            divStyle: 'p-2 sm:text-sm md:text-md xl:text-xl text-md cursor-pointer'
         },
         {
             title: 'About',
             slug: 'about',
-            divStyle: 'p-2 text-xl cursor-pointer'
+            divStyle: 'p-2 sm:text-sm md:text-md xl:text-xl text-md cursor-pointer'
         },
         {
             title: 'Sign In',
             slug: 'sign-in',
-            divStyle: 'p-2 text-xl cursor-pointer'
+            divStyle: 'p-2 sm:text-sm md:text-md xl:text-xl text-md cursor-pointer'
         }
     ]);
     const [workProcessComponent, setWorkProcessComponent] = useState({

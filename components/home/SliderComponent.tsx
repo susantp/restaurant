@@ -29,7 +29,7 @@ const SliderComponent: FC<any> = ({sliders}): JSX.Element => {
             <div className={`sectionDiv w-full items-center ${transition}`}>
                 <p className={`font-bold text-white text-2xl text-center`}>{slide.subTitle}</p>
                 <p className={`font-bold text-white text-6xl text-center`}>{slide.title}</p>
-                <p className={`text-white px-64 text-sm text-center leading-relaxed`}>{slide.description}</p>
+                <p className={`text-white  sm:px-16 md:px-6 px-16 xl:px-64 text-sm text-center leading-relaxed`}>{slide.description}</p>
             </div>
         )
     }
