@@ -4,10 +4,10 @@ import Footer from "./Footer";
 import GoTop from "./GoTop";
 import Content from "./Content";
 
-const Layout: FC<any> = ({children}): JSX.Element => {
+const Layout: FC<any> = ({children, navBarContent}): JSX.Element => {
     return (
         <div className={`bg-slate-100 `}>
-            <Navbar></Navbar>
+            <Navbar content={navBarContent}></Navbar>
             <Content>{children}</Content>
             <GoTop></GoTop>
             <Footer></Footer>
